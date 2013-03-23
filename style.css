@@ -30,7 +30,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+	height: 100%;
 body {
+	height: 100%;
 	line-height: 1;
 }
 ol, ul {
@@ -137,6 +140,7 @@ div#main {
 
 	float: left;
 	font-size: 18px;
+	height: 100%;
 	margin-right: 60px;
 	min-height: 370px;
 	padding: 30px;
@@ -208,6 +212,7 @@ p.titre {
 }
 
 p.content {
+	height: 100%;
 	margin-left: 10px;
 	margin-top: 15px;
 }
