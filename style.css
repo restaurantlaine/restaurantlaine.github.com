@@ -112,6 +112,7 @@ a:visited {
 }
 
 div#content {
+	height: 100%;
 	margin: 10px 5%;
 	overflow: hidden;
 }
@@ -141,7 +142,6 @@ div#main {
 
 	float: left;
 	font-size: 18px;
-	height: 100%;
 	margin-right: 60px;
 	min-height: 370px;
 	padding: 30px;
@@ -213,7 +213,6 @@ p.titre {
 }
 
 p.content {
-	height: 100%;
 	margin-left: 10px;
 	margin-top: 15px;
 }
