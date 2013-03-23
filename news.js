@@ -25,8 +25,8 @@ jQuery.extend(feeds,
           }
         }
       );
-    }, twitter_feed = 'yo_and_mi';
-  
+    }, twitter_feed = 'restaurantlaine';
+
     return {
       get_latest_news: function() {
         f(twitter_feed);
