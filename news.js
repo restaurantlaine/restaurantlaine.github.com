@@ -46,10 +46,10 @@ function update(data){
       if (data.length) {
         root.empty();
         jQuery.each(data.slice(0,5), function(idx, item) {
-          var cDate = new Date(item.created_at);
-                root.append('<h3>' + jQuery.datepicker.formatDate('yy.mm.dd', cDate) + '</h3>');
-                root.append('<p>' + item.text + '</p>');
-              });
+          var cDate = new Date(Date.parse(item.created_at.replace(/( \+)/, ' UTC$1')));
+          root.append('<h3>' + jQuery.datepicker.formatDate('yy.mm.dd', cDate) + '</h3>');
+          root.append('<p>' + item.text + '</p>');
+        });
       }
       else {
         root.text('最新情報はありません。');
